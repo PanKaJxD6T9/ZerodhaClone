@@ -21,9 +21,9 @@ code {
     monospace;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .footerMain a{
   text-decoration: none;

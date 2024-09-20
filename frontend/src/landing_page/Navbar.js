@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,51 +15,53 @@ const Navbar = () => {
           className="row px-5"
         >
           <div className="col-4">
-            <img style={{ width: "150px" }} src="assets/logo.svg" alt="logo" />
+            <Link to="/">
+              <img style={{ width: "150px" }} src="assets/logo.svg" alt="logo" />
+            </Link>
           </div>
           <div className="col-4"></div>
           <div
             style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "40px" }}
             className="col-4"
           >
-            <a
+            <Link
               style={{ textDecoration: "none", color: "black" }}
               className="text-muted"
-              href="#"
+              to="/signup"
             >
               SignUp
-            </a>
-            <a
+            </Link>
+            <Link
               style={{ textDecoration: "none", color: "black" }}
               className="text-muted"
-              href="#"
+              to="/about"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               style={{ textDecoration: "none", color: "black" }}
               className="text-muted"
-              href="#"
+              to="/products"
             >
               Products
-            </a>
-            <a
+            </Link>
+            <Link
               style={{ textDecoration: "none", color: "black" }}
               className="text-muted"
-              href="#"
+              to="/pricing"
             >
               Pricing
-            </a>
-            <a
+            </Link>
+            <Link
               style={{ textDecoration: "none", color: "black" }}
               className="text-muted"
-              href="#"
+              to="/support"
             >
               Support
-            </a>
-            <a style={{ textDecoration: "none", color: "black", fontSize: "20px" }} href="#">
+            </Link>
+            <Link style={{ textDecoration: "none", color: "black", fontSize: "20px" }} to="/">
               <i class="fa-solid fa-bars"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

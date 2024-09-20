@@ -1,18 +1,19 @@
 import React from 'react'
+
 import Navbar from '../Navbar'
 import Hero from './Hero'
-import Brokerage from './Brokerage'
 import Footer from '../Footer'
+import Universe from './Universe'
 
-const PricingPage = () => {
+const Product = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Brokerage />
+      <Universe />
       <Footer />
     </div>
   )
 }
 
-export default PricingPage
+export default Product
