@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.footerMain a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+
+.footerMain a:hover{
+  color: #387ED1;
+  opacity: 1;
+}
+
+.navbarMain a:hover{
+  color: #387ED1 !important;
+  opacity: 1 !important;
+}
+
+/* .fa-brands:hover{
+  color: #387ED1 !important;
+} */
+
+.fa-youtube:hover{
+  color: red !important;
+}
+
+.fa-instagram:hover{
+  color: #C13584 !important;
+}
+
+.fa-twitter:hover{
+  color: #1DA1F2 !important;
+}
+
+.fa-linkedin:hover{
+  color: #0A66C2 !important;
+}
+
+.fa-whatsapp:hover{
+  color: #25D366 !important;
+}
+
+.fa-facebook:hover{
+  color: #1877F2 !important;
+}
+
+.fa-telegram:hover{
+  color: #2AABEE !important;
 }
