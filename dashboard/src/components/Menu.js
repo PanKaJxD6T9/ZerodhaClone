@@ -10,7 +10,7 @@ const Menu = () => {
     setSelectedMenu(index);
   };
 
-  const handleProfileClick = (index) => {
+  const handleProfileClick = () => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
   };
 
@@ -19,12 +19,12 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
+      <img src="logo.png" style={{ width: '50px' }} />
       <div className="menus">
         <ul>
           <li>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to="/"
               onClick={() => handleMenuClick(0)}
             >
@@ -35,7 +35,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to="/orders"
               onClick={() => handleMenuClick(1)}
             >
@@ -46,7 +46,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to="/holdings"
               onClick={() => handleMenuClick(2)}
             >
@@ -57,7 +57,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to="/positions"
               onClick={() => handleMenuClick(3)}
             >
@@ -68,7 +68,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to="funds"
               onClick={() => handleMenuClick(4)}
             >
@@ -79,7 +79,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to="/apps"
               onClick={() => handleMenuClick(6)}
             >
@@ -96,7 +96,7 @@ const Menu = () => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Menu;
