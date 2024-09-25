@@ -12,21 +12,33 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const { holdingModel } = require('./models/holdingModel.js');
-const { positionModel } = require('./models/positionModel.js')
+const { positionModel } = require('./models/positionModel.js');
+const { ordersModel } = require('./models/ordersModel.js');
 
 app.get('/', (_req, res) => {
   res.send("Haha NOOOOB");
 });
 
-app.get('/allHoldings', async (req, res) => {
+app.get('/allHoldings', async (_req, res) => {
   let allHoldings = await holdingModel.find({});
   res.json(allHoldings);
 });
 
-app.get('/allPositions', async (req, res) => {
+app.get('/allPositions', async (_req, res) => {
   let allPositions = await positionModel.find({})
   res.json(allPositions)
 })
+
+app.post('/newOrder', async (req, res) => {
+  let newOrder = new ordersModel({
+    name: req.body.name,
+    qty: req.body.qty,
+    price: req.body.price,
+    mode: req.body.mode,
+  });
+  newOrder.save();
+  res.send("order Done")
+});
 
 // app.get('/addHoldings', async(req, res) => {
 //   let temp = [
